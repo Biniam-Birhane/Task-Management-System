@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="..\..\bootstrap\maxcdn.bootstrapcdn.com\bootstrap\3.3.5\css\bootstrap.min.css">
+       <script src="..\..\bootstrap\ajax.googleapis.com/ajax\libs\jquery\1.11.3\jquery.min.js"></script>
+       <script src="..\..\bootstrap\maxcdn.bootstrapcdn.com\bootstrap\3.3.5\js\bootstrap.min.js"></script>
+	   <title></title>
+	   <style type="text/css">
+	   	   .col-lg-4{
+	   	   	background-color: #f1f1f1;
+	   	   	height: 70%;
+	   	   }
+	   	   .col-lg-8{
+            
+	   	   }
+	   	   .dash{
+	   	      background-color: grey;
+	   	   }
+	   	   .list li{
+              list-style-type: none;
+              margin-bottom: 15px;
+	   	   }
+	   	   input,select,button,textarea{
+           width: 100%;
+           padding: 12px 20px;
+           display: inline-block;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           box-sizing: border-box;
+           padding-left: 0px;
+           margin-bottom: 10px;
+           }
+	   </style>
+	</head>
+	<body>
+	  <nav class="navbar navbar-inverse">
+    	<div class="container">
+    		<div class="navbar-header">
+               <p class="navbar-brand" href="#">admin panel</p>   			
+    		</div>
+    		<ul class="nav navbar-nav navbar-right">
+    			<li><a href="..\logout.php"><span class="glyphicon glyphicon-user"></span>logout</a></li>
+    		</ul>
+    	</div>
+    </nav>
+      <div class="row">
+      	<div class="col-lg-4">
+      		<div class="dash">
+      			<p style="text-align: center; color: white; font-size: 24px;">Dashbord</p>
+      		</div>
+      		<ul class="list">
+      			  <li><a href="adminhome.php">create/check/member/leader</a></li>
+              <li><a href="checkgroup.php">create/check work group</a></li>
+              <li><a href="checktask.php">create/check tasks</a></li>
+              <li><a href="checkuploadedfile.php">check uploaded files</a></li>
+      		</ul>
+      	</div>
+      	<div class="col-lg-8">
+      			<p style="text-align: center; color: white; font-size: 18px;" class="dash">project/task uploaded by</p>
+      			<table class="table table-bordered table-striped">
+      				<tr>
+      					<th>ID</th>
+      					<th>project name</th>
+      					<th>uploaded by</th>
+                <th>group name</th>
+                <th>discription</th>
+      					<th>submit date</th>
+      					<th>delete</th>
+                <th>download</th>
+      				</tr>
+                              <tr> 
+                    <td>2</td>
+                    <td>ADBS Chapter-1 (3).pdf</td>
+                    <td>shumuye</td>
+                    <td>website developer</td>
+                    <td>               	   	
+               	   ghvbuj</td>
+                    <td>2019-05-31</td>
+                    <td> <a href="checkuploadedfile.php?dele=2"  class="btn btn-danger"><span class="  glyphicon glyphicon-trash"></span></a></td>
+                    <td> <a download="../leaderfile/ADBS Chapter-1 (3).pdf" href="checkuploadedfile.php?down=../leaderfile/ADBS Chapter-1 (3).pdf" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span></a></td>
+                </tr>
+                              <tr> 
+                    <td>3</td>
+                    <td>2nd Year.pdf</td>
+                    <td>shumuye</td>
+                    <td>website developer</td>
+                    <td>               	   babababab	
+               	   </td>
+                    <td>2019-05-31</td>
+                    <td> <a href="checkuploadedfile.php?dele=3"  class="btn btn-danger"><span class="  glyphicon glyphicon-trash"></span></a></td>
+                    <td> <a download="../leaderfile/2nd Year.pdf" href="checkuploadedfile.php?down=../leaderfile/2nd Year.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span></a></td>
+                </tr>
+                              <tr> 
+                    <td>4</td>
+                    <td>Chapter  Two.pdf</td>
+                    <td>berhe</td>
+                    <td>game developers</td>
+                    <td>             chapter two  	   	
+               	   </td>
+                    <td>2019-05-31</td>
+                    <td> <a href="checkuploadedfile.php?dele=4"  class="btn btn-danger"><span class="  glyphicon glyphicon-trash"></span></a></td>
+                    <td> <a download="../leaderfile/Chapter  Two.pdf" href="checkuploadedfile.php?down=../leaderfile/Chapter  Two.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span></a></td>
+                </tr>
+                    			</table>
+      	</div>
+      </div>
+	</body>
+</html>
